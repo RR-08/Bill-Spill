@@ -1,0 +1,182 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    background-color:#D6BCFF;
+}
+.container{
+    text-align:center;
+    margin-top:10%;
+}
+.heading{
+    margin-bottom:10px;
+    /* text-tansform:uppercase; */
+    color:#9C60FF;
+    font-size: 24px;;
+
+}
+.calculate_container{
+    margin:0 auto;
+    display: flex;
+    height:auto;
+    background-color:white;
+    width: 90vw;
+    max-width:700px;
+    border-radius:10px;
+    justify-content:space-between;
+    padding:30px;
+    font-size:18px;
+
+}
+.left{
+    display: flex;
+    flex-direction:column;
+    gap:20px;
+    text-align:left;
+}
+.right{
+    display: flex;
+    flex-direction:column;
+    justify-content:space-between;
+    gap:20px;
+    text-align:left;
+    background-color:#9C60FF;
+    border-radius:4px;
+    width:40%;
+    color:white;
+    padding: 10px;
+}
+.icon_back{
+    background-color:#B6ACC3;
+    border-radius:4px;
+    padding:0 4px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+.counter{
+    display: flex;
+    align-items:center;
+}
+.left div p{
+    color:#9C60FF;
+
+}
+input{
+    border:none;
+    background-color:#B6ACC3;
+    opacity:0.53;
+    height:30px;
+    text-align:right;
+    font-size:18px;
+    outline:none;
+    padding:0 2px;
+
+}
+//this remove the increment and decrements from the input fileds for numbers
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.tip_btns{
+    display: grid;
+    gap:10px;
+    grid-template-areas:
+    "I1 I2 I3" 
+    "I4 I5 I6";
+}
+#btn1{
+    grid-area:I1;
+}
+#btn2{
+    grid-area:I2;
+}
+#btn3{
+    grid-area:I3;
+}
+#btn4{
+    grid-area:I4;
+}
+#btn5{
+    grid-area:I5;
+}
+#btn6{
+    grid-area:I6;
+}
+
+.btn{
+    padding:8px 24px;
+    color:white;
+    border:2px solid #9C60FF;
+    background-color:#9C60FF;
+    border-radius:4px;
+
+}
+.btn:hover{
+    color:#9C60FF;
+    background-color:white;
+    border:2px solid #9C60FF;
+    pointer:cursor;
+
+}
+.active{
+    color:#9C60FF;
+    background-color:white;
+    border:2px solid #9C60FF;
+}
+/* .btn:focus{
+    background-color:#D6BCFF;
+    color:#9C60FF;    
+
+} */
+.tip{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.tip-total{
+    display: flex;
+    flex-direction:column;
+    gap:10px;
+}
+.tip-display{
+    font-size: 28px;
+}
+.counter-btns{
+    display: flex;
+    cursor:pointer;
+    
+}
+.counter-btn{
+    background-color:white;
+    padding: 3px 8px;
+    border-radius:2px;
+    border:1px solid gray;
+}
+.selected{
+    background-color:#D6BCFF;
+    color:#9C60FF;   
+}
+.cal-btn{
+    padding:8px 24px;
+    color:#9C60FF;   
+    border:none;
+    background-color:white;
+    border-radius:4px;
+}
+@media (max-width:786px){
+   .calculate_container{
+    flex-direction:column;
+    gap:30px;
+    align-items:center;
+    width:60vw;
+
+   }
+   .right{
+    width:85%;
+   }
+}

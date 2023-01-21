@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            BILL<br>
+            SPILL
+        </div>
+        <div class="calculate_container">
+            <div class="left">
+                <div>
+                    <p>Bill</p>
+                    <div class="icon_back">
+                        <img src="img/₹.png" alt="">
+                        <input type="number" placeholder="0" min="0" id="bill-input" >
+                    </div>
+                </div>
+                <div>
+                    <p>Select Tip %</p>
+                    <div class="tip_btns">
+                        <button class="btn tip-btn" value="0.05">5%</button>
+                        <button class="btn tip-btn" value="0.1">10%</button>
+                        <button class="btn tip-btn" value="0.15">15%</button>
+
+                        <button class="btn tip-btn" value="0.25">25%</button>
+                        <button class="btn tip-btn" value="0.5" >50%</button>
+                        <button class="btn tip-btn" value="0.75">75%</button>
+                    </div>
+                
+                </div>
+                <div>
+                    <p>Number of people</p>
+                    <div class="icon_back counter">
+                        <img src="img/Vector.png" alt="">
+                        <input type="number" placeholder="0"id="count-display">
+                        <div class="counter-btns">
+                            <button class="counter-btn" id="plus">
+                                +
+                            </button>
+                            <button class="counter-btn" id="zero">
+                                0
+                            </button>
+                            <button class="counter-btn" id="minus">
+                                -
+                            </button>
+
+                        </div>
+                        
+                    </div>
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="tip-total">
+                    <div class="tip">
+                        <div >
+                            <p>Tip Amount
+                                <br>/person
+                            </p>
+                            
+                        </div>
+                        <div class="tip-display" id="tip-person">
+                            Rs. 0.00
+                    
+                        </div>
+                    
+                    </div>
+                    <div class="tip">
+                        <div>
+                            <p>Total<br>/person</p>
+                        </div>
+                        <div class="tip-display" id="amount-person">
+                            Rs. 0.00
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="cal-btn" id="reset">Calculate</button>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
